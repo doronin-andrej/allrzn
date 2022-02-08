@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 * {margin: 0; padding: 0; box-sizing: border-box;}
 
-body {display: flex; justify-content: center; font-family: 'Roboto', sans-serif;}
+body {display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Roboto', sans-serif;}
 
 header {
     display: flex;
@@ -32,3 +32,9 @@ header .header_left_menu .header_suggest_news a {
     text-decoration: none; 
     color: #FFFFFF;
 }
+section {display: block; flex-direction: row; justify-content: space-between; width: 1280px; height: 50px; background: #cccbcb;}
+section .section_nav_menu {align-items:center;}
+section .section_nav_menu nav .section_nav_left_menu {display: block;}
+section .section_nav_menu nav .section_nav_left_menu ul {display: flex; justify-content: space-between;}
+section .section_nav_menu nav .section_nav_left_menu ul li {display: block;}
+section .section_nav_menu nav .section_nav_left_menu ul li a {display: block; text-decoration: none; font-size: 15px; }
