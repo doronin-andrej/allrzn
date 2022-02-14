@@ -68,10 +68,12 @@ header {
 }
 .left_news_block {
     max-width: 878px;
+    max-height: 180px;
 }
 .swiper {
     width: 100%;
-    height: 10%;
+    height: 100%;
+    min-width: 0;
   }
 
   .swiper-slide {
@@ -96,18 +98,32 @@ header {
 
   @media (max-width: 760px) {
     .swiper-button-next {
-      right: 20px;
-      transform: rotate(90deg);
+        right: 20px;
+        transform: rotate(90deg);
+        background-color: white;
+        background-color: rgba(255, 255, 255, 0.5);
+        right:10px;
+        padding: 30px;
+        color: #000 !important;
+        fill: black !important;
+        stroke: black !important;
     }
 
     .swiper-button-prev {
-      left: 20px;
-      transform: rotate(90deg);
+        right: 20px;
+        transform: rotate(90deg);
+        background-color: white;
+        background-color: rgba(255, 255, 255, 0.5);
+        right:10px;
+        padding: 30px;
+        color: #000 !important;
+        fill: black !important;
+        stroke: black !important;
     }
-.right_news_block {
+.news_block .right_news_block {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    width: 250px;
 }
 .right_news_block a.right_news_block_122 {padding: 30px 0px 0px 0px;}
 .right_news_block a.right_news_block_123 {padding: 20px 0px 0px 0px;}
