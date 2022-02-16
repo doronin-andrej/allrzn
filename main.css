@@ -78,8 +78,9 @@ header {
 
 .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: 12px;
     background: #E5E5E5;
+
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -97,24 +98,16 @@ header {
 }
 
 .swiper-button-next {
-    background-image: url(%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23AA3D3D'%3E%3C/circle%3E%3Cpath d='M34.4414 25.6738C34.4414 25.459 34.3555 25.2549 34.1836 25.0938L27.4268 18.3262C27.2119 18.1221 27.0293 18.0469 26.8145 18.0469C26.3848 18.0469 26.0625 18.3691 26.0625 18.7988C26.0625 19.0029 26.127 19.207 26.2666 19.3467L29.0166 22.1182L32.1641 25.0293L29.7793 24.9004H16.3516C15.9111 24.9004 15.5889 25.2227 15.5889 25.6738C15.5889 26.1143 15.9111 26.4365 16.3516 26.4365H29.7793L32.1748 26.3076L29.0166 29.2188L26.2666 31.9902C26.1377 32.1299 26.0625 32.334 26.0625 32.5381C26.0625 32.9678 26.3848 33.29 26.8145 33.29C27.0293 33.29 27.2012 33.2148 27.373 33.0537L34.1836 26.2432C34.3555 26.082 34.4414 25.8887 34.4414 25.6738Z' fill='white'%3E%3C/path%3E%3C/svg%3E);
+    background-image: url(/images/Group\ 95.svg);
     width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 .swiper-button-next::after {
     display: none;
 }
 
 .swiper-button-prev {
-    background-image:  url(%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23AA3D3D'%3E%3C/circle%3E%3Cpath d='M34.4414 25.6738C34.4414 25.459 34.3555 25.2549 34.1836 25.0938L27.4268 18.3262C27.2119 18.1221 27.0293 18.0469 26.8145 18.0469C26.3848 18.0469 26.0625 18.3691 26.0625 18.7988C26.0625 19.0029 26.127 19.207 26.2666 19.3467L29.0166 22.1182L32.1641 25.0293L29.7793 24.9004H16.3516C15.9111 24.9004 15.5889 25.2227 15.5889 25.6738C15.5889 26.1143 15.9111 26.4365 16.3516 26.4365H29.7793L32.1748 26.3076L29.0166 29.2188L26.2666 31.9902C26.1377 32.1299 26.0625 32.334 26.0625 32.5381C26.0625 32.9678 26.3848 33.29 26.8145 33.29C27.0293 33.29 27.2012 33.2148 27.373 33.0537L34.1836 26.2432C34.3555 26.082 34.4414 25.8887 34.4414 25.6738Z' fill='white'%3E%3C/path%3E%3C/svg%3E);
+    background-image:  url(/images/Group\ 95.svg);
     width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     transform: rotate(180deg);
 }
 
