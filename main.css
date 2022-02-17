@@ -67,12 +67,16 @@ header {
     padding: 0px 50px;
 }
 .left_news_block {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
     max-width: 878px;
-    max-height: 180px;
+    max-height: 2240px;
+    padding: 20px 0px;
 }
 .swiper {
     width: 100%;
-    height: 100%;
+    height: 10%;
     min-width: 0;
 }
 
@@ -114,6 +118,19 @@ header {
 .swiper-button-prev::after {
     display: none;
 }
+
+.left_news_block_section_1 {
+    display: flex;
+    max-width: 878px;
+    max-height: 130px;
+    padding: 20px 50px 20px 0px;
+}
+
+.left_news_block_section_1 a {
+    margin: 0px -11px 0px 0px;
+}
+
+
 
 .news_block .right_news_block {
     display: flex;
