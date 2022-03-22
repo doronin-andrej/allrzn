@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
     margin: 0; 
     padding: 0; 
@@ -43,62 +43,43 @@ body {
 .header_burger {
     display: none;
 }
-.header_right_menu {display: flex; position: relative; z-index: 2;}
-.header_searsh {margin: 0px 57px 0px 0px;}
-.header_about {margin: 0px 46px 0px 0px;}
-
+.header_right_menu {
+    display: flex; 
+    position: relative; 
+    z-index: 2;
+    align-items: center;
+}
+.header_searsh {
+    margin: 0px 25px 0px 0px;
+}
+.header_line {
+    margin: 0px 0px 0px 0px;
+}
+.header_about {
+    margin: 0px 46px 0px 32px;
+}
 .header_about a {
+    display: flex;
     font-size: 15px; 
     margin: 0px 10px 0px 10px;
     color: #FFFFFF;
     font-weight: 600;
-    position: relative;
     white-space: nowrap;
     text-decoration: none;
-    font-weight: 300;
-    transition: 0.34s;
-}
-.header_about a:after {
-    content: attr(data-title);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    color: transparent;
-    font-weight: 900;
-    transition: 0.34s;
-    transform: scale(0.9);
-    transform-origin: center center;
-}
-.header_about a:hover {
-    color: transparent
-}
-.header_about a:hover::after {
-    color: #FFFFFF;
-    transform: scale(1.05);
-    font-weight: 900;
+    font-weight: 400;
 }
 .header_suggest_news {
-    margin: 0px 13px 0px 0px;
+    margin: 0 0;
 }
 .header_suggest_news a {
+    display: flex;
     padding: 10px 13px;
-    background: rgba(255, 255, 255, .3);
+    background: rgba(138, 138, 138, 0.3);
     border-radius: 4px;
     font-size: 15px; 
     text-decoration: none; 
     color: #FFFFFF;
-    font-weight: 600;
-}
-.header_suggest_news a:hover{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+    font-weight: 400;
 }
 .header_logo {
     flex: 0 0 100px;
@@ -125,44 +106,18 @@ body {
     white-space: nowrap;
 }
 .section_nav_left_menu a {
+    display: block;
     font-size: 15px; 
     margin: 0px 10px 0px 10px;
     color: #000000;
     font-weight: 400;
-    position: relative;
     white-space: nowrap;
     text-decoration: none;
-    font-weight: 300;
-    transition: 0.34s;
-}
-.section_nav_left_menu a:after {
-    content: attr(data-title);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    color: transparent;
-    font-weight: 900;
-    transition: 0.34s;
-    transform: scale(0.9);
-    transform-origin: center center;
-}
-.section_nav_left_menu a:hover {
-    color: transparent
-}
-.section_nav_left_menu a:hover::after {
-    color: #000000;
-    transform: scale(1.05);
-    font-weight: 900;
 }
 .section_nav_right_menu {
     display: flex; 
     align-items: center;
+    margin: 0px -10px 0px 0px;
 }
 .section_nav_right_menu a {
     margin: 0px 10px 0px 10px;
@@ -324,11 +279,8 @@ body {
     text-decoration: none;
     margin: 0px 10px;
     color: #000000;
-    font-weight: 800;
+    font-weight: 400;
     white-space:nowrap
-}
-.sitefooter_left_menu a:hover {
-    font-size: 110%;
 }
 .sitefooter_right_menu {
     display: flex;
@@ -338,6 +290,13 @@ body {
 }
 .sitefooter_mobile {
     display: none;
+}
+
+a>span:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition:all 0.3s;
 }
 
 @media (max-width:980px){
@@ -436,17 +395,6 @@ body {
     }
     .header_suggest_news {
         margin: 0px 0px 60px 0px;
-    }
-    .header_suggest_news a {
-        padding: 10px 13px;
-        background: rgba(255, 255, 255, .3);
-        border-radius: 4px;
-        font-size: 15px; 
-        text-decoration: none; 
-        color: #FFFFFF;
-        font-weight: 600;
-        transition: 0.34s;
-        width: 171px;
     }
     .section_nav_menu {
         display: block;
@@ -569,6 +517,7 @@ body {
         align-items: flex-start;
     }
     .sitefooter_left_menu a {
+        display: inline;
         font-size: 15px; 
         text-decoration: none;
         margin: 0px 10px;
